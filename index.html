@@ -23,17 +23,15 @@
 <script>
 /* Board dossier settings. Edit these month to month; nothing else in the file needs touching.
    since      : the lines that appear under "Since last month", newest first
-   done       : ids of next steps that are complete. Ids: quiet, prospects, tracker, board, gifts, story, leadgift, history, room, name, filmmakers, pills
 */
 window.DOSSIER = {
   month: "September 2026",
   since: [
-    "The lead gift is committed. The gift that reignites the campaign.",
-    "Campaign goal raised to $18M with $9.8M remaining. Prior funds reconciled.",
-    "The architect is engaged and the design is moving.",
-    "Cinema sign workstream in process, within the outdoor signage and lighting code."
-  ],
-  done: []
+    "A lead gift of $5M has been committed. The donor has not authorized any publicity, so the gift stays unnamed in anything that leaves the board.",
+    "The campaign goal is now $18M. The earlier accounts have been reconciled, so there is one clear set of numbers to work from: $8.2M is already in place, which leaves $9.8M still to raise.",
+    "Dave Rybak of Rybak Architecture and Development has been engaged as both architect and project manager, and the design work is underway.",
+    "Work will begin on adding a new sign reading Cinema to the front of the building. It will be designed to fit Aspen&rsquo;s rules for outdoor signs and lighting."
+  ]
 };
 </script>
 <style>
@@ -438,6 +436,8 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
 
 /* ---- next steps checklist ---- */
 .check{list-style:none;padding:0}
+.plain{padding-left:20px;margin:0}
+.plain li{margin:0 0 12px}
 .check li{position:relative;padding-left:34px}
 .check li:before{content:"";position:absolute;left:0;top:.12em;width:18px;height:18px;border-radius:50%;border:1.5px solid rgba(26,23,20,.35);background:#fff9ee;box-sizing:border-box;transition:background .5s ease,border-color .5s ease}
 .check li:after{content:"";position:absolute;left:6.5px;top:.28em;width:4px;height:8px;border-right:2px solid #fff9ee;border-bottom:2px solid #fff9ee;transform:rotate(45deg) scale(0);transform-origin:center;transition:transform .45s var(--easeOut) .35s}
@@ -465,7 +465,6 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
     <div id="title">
       <div class="act">The Next Act of the Isis Theatre</div>
       <h2>Board dossier.</h2>
-      <p class="lede intro">The campaign deck is written for potential donors. This document is written for us. It carries the numbers behind the ticker, the operating model, and the campaign process. Nothing in it goes to a donor.</p>
     </div>
     <div class="stand">
       <div class="head">
@@ -481,7 +480,7 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
       <div class="legend">
         <div><b><span class="sw" style="background:#8a6a2c"></span>$1.1M</b><span>Raised for the initial architectural plans, including detailed structural and mechanical engineering.</span></div>
         <div><b><span class="sw" style="background:#b8923f"></span>$2.1M</b><span>Raised to secure ownership of the cinema outright, with no loan and no interest payments.</span></div>
-        <div><b><span class="sw" style="background:#ebd08a"></span>$5.0M</b><span>Lead gift committed. The gift that reignites the campaign.</span></div>
+        <div><b><span class="sw" style="background:#ebd08a"></span>$5.0M</b><span>Lead gift committed.</span></div>
         <div><b>$9.8M</b><span>Remaining to raise.</span></div>
       </div>
     </div>
@@ -497,33 +496,19 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
     </div>
 
     <div class="dbox rv">
-      <h3>A new sign, on old rules</h3>
-      <p>The Cinema sign is the one exterior change in this project. It works inside three lines that do not move.</p>
+      <h3>The Cinema sign</h3>
+      <p>The one exterior change in the project. A simple, modern, weather resistant sign on a bar off the building, visible from the corner and lit by existing fixtures.</p>
     </div>
     <div class="constraints three">
-      <div class="rv hs"><b>Historic sign</b>Untouchable. The new Cinema sign never hangs from it, touches it or attaches to it.</div>
-      <div class="rv d1"><b>Lighting</b>The Cinema sign is not self illuminated. It is lit by fixtures elsewhere, within the City curfew, color temperature and lumen limits. Full compliance due December 2028.</div>
-      <div class="rv d2"><b>Facade</b>A designated Historic Resource. The Cinema sign projects off the building on a bar. Exterior modification is out of scope.</div>
-    </div>
-
-    <div class="dbox rv">
-      <h3>Two house rules</h3>
-    </div>
-    <div class="constraints twoUp">
-      <div class="rv"><b>Lead donor</b>Committed, with no publicity authorized. No names in anything public.</div>
-      <div class="rv d1"><b>Monthly updates</b>Once a month, a short update on the Isis development goes to the board from the Isis Development Committee.</div>
-    </div>
-
-    <div class="dbox rv">
-      <h3>The Isis, on the record</h3>
-      <p>Henry Webber arrived in Aspen in 1880, became mayor in 1888, and built the Webber Block on Hopkins in 1892. It held a wholesale produce business, then a wallpaper and paint shop. In 1915, a couple of years after two fires closed the Wheeler Opera House, the Women&rsquo;s Civic Improvement League turned it into a movie house. The Isis opened on September 20, 1915, with 360 seats and <i>Officer 666</i>, a 1912 Broadway farce in which a millionaire poses as a policeman to catch an art thief, filmed in 1914. Alongside silent films it hosted variety shows, minstrel shows and Sunday church services. The theatre was named for Isis, the Egyptian goddess of magic.</p>
-      <p style="margin-top:14px;font-size:14px;color:#6b6252">Sources: Cinema Treasures; Aspen Daily News, November 2023. The opening year is confirmed with the Aspen Historical Society before it appears in the deck.</p>
+      <div class="rv hs"><b>Historic sign</b>The original Isis sign is part of what the building is known for, and it stays exactly as it is. The new Cinema sign sits near it without hanging from it, touching it or attaching to it.</div>
+      <div class="rv d1"><b>Lighting</b>The new sign does not light up on its own. It is lit by fixtures placed elsewhere on the building, which keeps it inside Aspen&rsquo;s outdoor lighting code. That code sets how late lights may stay on, how warm the light has to be, and how bright it can get.</div>
+      <div class="rv d2"><b>Facade</b>The front of the building is a designated Historic Resource, so it cannot be altered. The new sign projects out on a bar instead, which leaves the facade itself untouched.</div>
     </div>
 
     <div class="dbox">
       <div class="rv">
         <h3>Operating model after opening</h3>
-        <p>The building runs through operators rather than Aspen Film staff. Operating profit pays the HOA and building costs, and any surplus returns to programming. There is no profit motive; the goal is a building that pays for itself and keeps prices down for the community.</p>
+        <p>The building runs through operators rather than Aspen Film staff. Operating income pays the HOA and building costs first, and what is left goes to programming. The building pays for itself, which is what keeps ticket prices within reach for the community.</p>
         <svg class="flow" viewBox="0 0 960 150" role="img" aria-label="Money flow: operators pay the Isis, the Isis pays HOA and building costs, any surplus returns to programming">
           <rect x="6" y="26" width="200" height="98" rx="10"/>
           <text class="t" x="24" y="56">Operators</text>
@@ -538,7 +523,7 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
           <text x="660" y="52">Paid first, every month</text>
           <rect x="640" y="86" width="310" height="58" rx="10"/>
           <text class="t" x="660" y="110">Surplus to programming</text>
-          <text x="660" y="130">No profit motive</text>
+          <text x="660" y="130">Reinvested in the Isis</text>
           <path class="line" d="M206 75 H330"/>
           <path class="dots" d="M206 75 H330"/>
           <path class="line" d="M510 75 C570 75 580 37 640 37"/>
@@ -547,11 +532,11 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
           <path class="dots" d="M510 75 C570 75 580 115 640 115"/>
         </svg>
         <div class="tablewrap"><table>
-          <tr><th>Piece</th><th>Who</th><th>Basis</th></tr>
+          <tr><th>What</th><th>Who handles it</th><th>How the money works</th></tr>
           <tr><td>Theatre operations, ticketing, concessions, staff</td><td>Theatre operator (currently Bow Tie)</td><td>Flat fee to the operator. Operating income paid to Isis, LLC to pay HOA and building costs</td></tr>
-          <tr><td>Cafe and bar</td><td>Separate operator, to be selected. MML has expressed interest in the past (MML operates Clark&rsquo;s, Las Montanas and Swedish Hill)</td><td>Monthly rent, roughly $10K discussed <span class="pill">Planning estimate</span></td></tr>
-          <tr><td>Liquor license</td><td>Held by Aspen Film, LLC</td><td>Operators serve under the Aspen Film license</td></tr>
-          <tr><td>Rentals and events</td><td>Bow Tie management, overseeing and managing rentals</td><td>Expected to double after renovation <span class="pill">Planning estimate</span></td></tr>
+          <tr><td>Cafe and bar</td><td>Separate operator, to be selected. MML has expressed interest in the past (MML operates Clark&rsquo;s, Las Montanas and Swedish Hill)</td><td>Monthly rent, roughly $10K discussed</td></tr>
+          <tr><td>Liquor license</td><td>Held by Aspen Film Isis LLC</td><td>Operators serve under the Aspen Film Isis license</td></tr>
+          <tr><td>Rentals and events</td><td>Bow Tie management, overseeing and managing rentals</td><td>Expected to double after renovation</td></tr>
           <tr><td>HOA, utilities, upkeep</td><td>Isis HOA</td><td>Paid from the income from all of the above</td></tr>
         </table></div>
         <p style="margin-top:16px">Figures shown are working assumptions.</p>
@@ -560,30 +545,20 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
 
     <div class="dbox rv">
       <h3>Next steps</h3>
-      <div class="tally" id="tally"></div>
-
       <h4>Campaign process</h4>
-      <ul class="check">
-        <li data-step="quiet">Quiet phase only. No public launch.</li>
-        <li data-step="prospects">Board members and friends of Aspen Film identify individual prospects and open conversations one on one.</li>
-        <li data-step="tracker">A single tracker records who is speaking to whom and any potential donation amount. Access stays narrow so no prospect hears from two people.</li>
-        <li data-step="board">The campaign deck goes to the full board first for alignment.</li>
-        <li data-step="gifts">Gift levels and recognition are confirmed only in a written agreement, and the board signs off the five circle hierarchy before any circle is discussed with a donor.</li>
-        <li data-step="story">Each donor is asked for one Aspen Film story for their wall entry at the time of the gift, in their own words, so the wall fills as the campaign does.</li>
-        <li data-step="leadgift">The lead gift stays unnamed in every material that leaves the board until the donor authorizes publicity in writing.</li>
+      <ul class="plain">
+        <li>The campaign stays in its quiet phase for now, with no public launch, so the early conversations can happen privately and at their own pace.</li>
+        <li>Board members and friends of Aspen Film identify individual prospects and open conversations one on one.</li>
+        <li>A single tracker records who is speaking to whom and any potential donation amount.</li>
+        <li>Gift levels and recognition are confirmed only in a written agreement.</li>
+        <li>The lead gift stays unnamed until the donor authorizes publicity in writing.</li>
       </ul>
+    </div>
 
-      <h4>The addition of a Cinema sign</h4>
-      <p>A separate workstream, already in process. A simple, modern, weather resistant &ldquo;Cinema&rdquo; sign on a bar off the building, never touching the historic sign, visible from the corner, lit by existing fixtures within the outdoor lighting code. Early pricing runs $4K to $9K, from one search, not a quote. <span class="pill">Planning estimate</span></p>
-
-      <h4>Before the deck goes out</h4>
-      <ul class="check">
-        <li data-step="history">The deck says 1912. The record above says September 20, 1915; Aspen Film&rsquo;s own 2025 statement to council says 1912. The Aspen Historical Society settles the year before it goes public. If it is 1915, the Hollywood line still holds: that is the year Universal City opened its gates.</li>
-        <li data-step="room">The original auditorium came down in 1998; only the facade and the sign are older than 1999. &ldquo;The room Aspen has watched them in since 1912&rdquo; becomes &ldquo;behind the same sign.&rdquo;</li>
-        <li data-step="name">The name is credited to the goddess and to a regional chain of Isis theatres of the period. The deed requires the name to stay, so the story only has to be true, not chosen.</li>
-        <li data-step="filmmakers">The two filmmaker lines are paraphrases with names attached. Check them against the source before anyone reads them aloud. The interlude is ours and can change freely.</li>
-        <li data-step="pills">A gold pill means a number nobody has signed. It comes off when a quote or a board vote replaces it.</li>
-      </ul>
+    <div class="dbox rv">
+      <h3>Previous acts</h3>
+      <p>Henry Webber reached Aspen in 1880, was elected mayor in 1888, and put up the Webber Block on Hopkins in 1892. It sold wholesale produce, then wallpaper and paint. In 1915, two years after fire closed the Wheeler Opera House and left the town without a stage, the Women&rsquo;s Civic Improvement League turned the building into a movie house. The Isis opened on September 20, 1915 with 360 seats and <i>Officer 666</i>, a Broadway farce about a millionaire who dresses as a policeman to catch an art thief. Between pictures it ran variety shows, minstrel shows and Sunday church services. The name came from the Egyptian goddess of magic, and it has outlasted every business the building has held.</p>
+      <p style="margin-top:14px">Act one sold produce. Act two sold wallpaper and paint. Act three opened in 1915 and has been running ever since.</p>
     </div>
   </div>
 </section>
@@ -591,6 +566,7 @@ body.dossierPage .footer p,body.dossierPage .footer a{color:#5a5347}
 <footer class="footer">
   <div class="wrap">
     <p>Board dossier, September 2026. Confidential. Not for distribution beyond the board.</p>
+    <p style="margin-top:14px">Questions, or anything to add before the next update: Mimi Polk Gitlin, <a href="mailto:mimipolkgitlin@gmail.com">mimipolkgitlin@gmail.com</a> &nbsp;&middot;&nbsp; Mark Johnston, <a href="mailto:mark@zillaspace.net">mark@zillaspace.net</a></p>
   </div>
 </footer>
 
